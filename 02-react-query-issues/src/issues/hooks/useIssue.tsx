@@ -16,7 +16,6 @@ export const getIssueComment = async ( issueNumber: number ):Promise<Issue[]> =>
 }
 
 export const useIssue = ( issueNumber: number ) => {
-  
   const issueQuery = useQuery(
     ['issue', issueNumber],
     () => getIssueInfo( issueNumber ),
